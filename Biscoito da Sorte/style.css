@@ -43,16 +43,64 @@ body {
 
 .top {
    margin-top: -2.0rem;
-   animation: downtop 400ms;
+   animation: downtop 700ms;
 }
 
 .down {
-    margin-top: -2.0rem;
+    margin-top: 2.0rem;
     animation: centerLeft 400ms;
 }
 
+.downCenter {
+    margin: 1.5rem 0px 0px 0px;
+}
+
+.downCenterLeft {
+    margin-top: 1.5rem;
+    margin-right: 9.5rem;
+    animation: downtop 700ms;
+}
+
+.toTop {
+    margin-top: -2.0rem;
+}
+
+.topleft {
+    margin-top: -2.0rem;
+    margin-right: 9.5rem;
+    animation: toright 700ms;
+}
+
+.topCenter {
+    margin-top: -2.0rem;
+    margin-right: -4.0rem;
+    animation: toright 700ms;
+}
+
+.topRight {
+    margin-top: -2.0rem;
+    margin-right: -1.5rem;
+    animation: topdown 700ms;
+}
+
+.rightleftCenter {
+    margin-left: 1.5rem;
+    animation: toleft 700ms;
+}
+
+.centerLeft {
+    animation: toleft 700ms;
+}
+
+.leftTop {
+    margin-left: -5.5rem;
+    animation: downtop 700ms;
+}
+
+
 .hide {
     display: none;
+    transition: 2s;
 }
 
 @keyframes downtop {
@@ -82,7 +130,7 @@ body {
 @keyframes toright {
     0% {
         opacity: 1;
-        transform: translateX(-1.5rem);
+        transform: translateX(-2.5rem);
     }
 
     100% {
