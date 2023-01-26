@@ -14,49 +14,54 @@ function handleTryClick(event) {
     event.preventDefault()
 
     btn.classList.add("hide")
-
-    handleAnimationRepeat()
     
+        handleAnimationRepeat()
+
+        handleToggleScreen()
 }
 
 btnTry.addEventListener('click', handleTryClick)
 
+function handleToggleScreen() {
+    setInterval(() => {
+        screen1.classList.add("hide")
+    }, 1300);
+
+}
+
 function handleAnimationRepeat() {
 
-        setTimeout(() => {
+        setInterval(() => {
             topImg.classList.remove("hide")
-        }, 100);
+        }, 500);
         
-        setTimeout(() => {
+        setInterval(() => {
             topImg.classList.add("hide")
         }, 300);
 
-        setTimeout(() => {
+        setInterval(() => {
             topCenterImg.classList.remove("hide")
         }, 300);
 
-        setTimeout(() => {
+        setInterval(() => {
             topCenterImg.classList.add("hide")
         }, 300);
 
-        setTimeout(() => {
+        setInterval(() => {
             topRigthImg.classList.remove("hide")
         }, 300);
 
-        setTimeout(() => {
+        setInterval(() => {
             topRigthImg.classList.add("hide")
         }, 500);
 
-        setTimeout(() => {
-            topRigthImg.classList.add("hide")
-        }, 500);
 
-        setTimeout(() => {
+        setInterval(() => {
             centerLeftImg.classList.remove("hide")
         }, 500);      
         
-        setTimeout(() => {
+        setInterval(() => {
             centerLeftImg.classList.add("hide")
-        }, 300);  
-
+        }, 500);  
+        
 }
