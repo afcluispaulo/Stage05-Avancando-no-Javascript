@@ -1,7 +1,9 @@
 const screen1 = document.querySelector(".screen1")
-const screen2 = document.querySelector(".screen2")
 
+const screen2 = document.querySelector(".screen2")
+const boxMsg = document.querySelector(".box")
 const btnTry = document.querySelector("#btnTry")
+const btnTry2 = document.querySelector("#btnTry2")
 const btn = document.querySelector('button')
 
 const topImg = document.querySelector(".top")
@@ -14,19 +16,27 @@ function handleTryClick(event) {
     event.preventDefault()
 
     btn.classList.add("hide")
-    
-        handleAnimationRepeat()
+ 
+    handleAnimationRepeat()
 
-        handleToggleScreen()
+    handleToggleScreen()
+
+}
+
+function handleTryClick2(event) {
+    event.preventDefault()
+
+    
 }
 
 btnTry.addEventListener('click', handleTryClick)
+btnTry2.addEventListener('click', handleTryClick2)
 
 function handleToggleScreen() {
     setInterval(() => {
-        screen1.classList.add("hide")
+        screen1.classList.toggle("hide")
     }, 1300);
-
+    screen2.classList.toggle("hide")
 }
 
 function handleAnimationRepeat() {
