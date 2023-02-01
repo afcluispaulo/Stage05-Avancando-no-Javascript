@@ -101,7 +101,7 @@ body {
 
 .hide {
     display: none;
-    transition: 2s;
+    
 }
 
 @keyframes downtop {
@@ -167,6 +167,8 @@ body {
 
     text-align: center;
 
+    position: relative;
+
 }
 
 .screen2 .msg {
@@ -174,6 +176,8 @@ body {
     flex-direction: column;
 
     align-items: center;
+
+    position: relative;
 }
 
 .screen2 h1 {
@@ -199,7 +203,31 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
 
+.box2 {
+    padding: 1.0rem;
+    gap: 1.0rem;
+    width: 5.3rem;
+    height: 5.7rem;
+    margin-right: 2.4rem;
+    margin-top: 12.7rem;
+
+    background-color: #E4EDF1;
+    box-shadow: .2rem .2rem .2rem rgba(85, 85, 85, 0.5);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box2Animation {
+    animation: downtopMsg 700ms;
+}
+.box2 p {
+    display: none;
 }
 
 .screen2 p {
@@ -207,6 +235,19 @@ body {
     font-size: 2.4rem;
     line-height: 2.9rem;
     text-align: center;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.hide-absolute {
+    display: none;
+    position: absolute;
 }
 
 .screen2 button {
@@ -229,15 +270,18 @@ body {
     color: white;
 }
 
+
+
 @keyframes downtopMsg {
     0% {
-        opacity: 1;
-        transform: translateY(0);
+        opacity: 0;
+        transform: translateY();
+        
     }
 
     100% {
         opacity: 1;
-        transform: translateY(-1.5rem);
+        transform: translateY(-8.1rem);
     }
 }
 
