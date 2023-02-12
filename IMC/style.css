@@ -99,7 +99,7 @@ form input:focus {
     /* atenção */
 }
 
-button {
+form button {
     margin-top: 3.2rem;
     padding: 1.6rem;
     width: 100%;
@@ -120,7 +120,7 @@ button {
     transition: background .3s;
 }
 
-button:hover {
+form button:hover {
     background: var(--bg-button-hover);
 }
 
@@ -133,4 +133,28 @@ button:hover {
 
     display: grid;
     place-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    position: relative;
+}
+
+.modal button {
+    background: none;
+    border: none;
+
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+
+    cursor: pointer;
+
+    transition: transform .3s;
+}
+
+.modal button:hover {
+    transform: scale(1.1);
 }
