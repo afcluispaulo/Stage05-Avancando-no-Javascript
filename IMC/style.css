@@ -55,7 +55,7 @@ body, input, button {
 .title {
     font-size: 3.2rem;
     line-height: 4rem;
-    color: var(--tt-label);
+    color: var(--tt-heading);
 }
 
 form {
