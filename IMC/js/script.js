@@ -1,4 +1,5 @@
 import { Modal } from './modal.js'
+import { AlertError } from './alert-error.js'
 
 // variáveis - variables
 const form = document.querySelector('form')
@@ -11,6 +12,14 @@ form.onsubmit = event => {
     
     const weight = inputWeight.value
     const height = inputHeight.value
+
+    const showAlertError = notANumber(weight) || notANumber(height)
+
+    if (showAlertError) {
+        AlertError.open()
+        return;
+    }
+    AlertError.close()
 
     const result = IMC(weight, height)
     const message = `Seu IMC é de ${result}`
