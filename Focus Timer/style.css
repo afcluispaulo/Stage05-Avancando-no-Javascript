@@ -1,8 +1,27 @@
+:root {
+   /* cor botão padrão */
+   /*--base-color: 240; */
+   --base-color: 240;
+   --bg-primary-color: hsl(var(--base-color), 11%, 89%);
+   --txt-primary-color: hsl(var(--base-color), 6%, 21%);
+
+    /* botão com hover, ou quando clicado*/
+    --base-color-s: 194;
+    --bg-primary-color-s: hsl(var(--base-color-s), 97%, 31%);
+    --base-color-txt-s: 0;
+    --txt-primary-color-s: hsl(var(--base-color-txt-s), 0%, 100%);
+
+}
+
+.hide {
+    display: none;
+}
 
 body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "m s";
+    align-items: center;
 }
 
 .menu {
@@ -12,6 +31,15 @@ body {
     align-items: center;
 }
 
+.timer span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 126.166px;
+    line-height: 148px;
+}
+
+
 .controls {
     display: flex;
     flex-direction: row;
@@ -19,12 +47,30 @@ body {
     margin-top: 48px;
 }
 
+.controls button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.play svg path
+.stop svg path,
+.add svg path,
+.decr svg path {
+    fill: var()
+}
+
 .sounds {
     grid-area: s;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+}
+
+.sounds button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
 }
 
 .sounds .button-wrapper button + button {
@@ -34,4 +80,39 @@ body {
 .menu, 
 .sounds {
     margin-top: 186px;
+}
+
+.forest svg path,
+.rain svg path,
+.coffe svg path,
+.fireplace svg path {
+    fill: var(--bg-primary-color);
+}
+
+.forest svg path:hover,
+.rain svg path:hover,
+.coffe svg path:hover,
+.fireplace svg path:hover {
+    fill: #8f8f94;
+}
+
+.forest svg path:nth-child(2),
+.rain svg path:nth-child(2),
+.coffe svg path:nth-child(2),
+.fireplace svg path:nth-child(2) {
+    fill: var(--txt-primary-color);
+}
+
+.forest-stop svg path,
+.rain-stop svg path,
+.coffe-stop svg path,
+.fireplace-stop svg path {
+    fill: var(--base-color)
+}
+
+.forest-stop svg path:nth-child(2),
+.rain-stop svg path:nth-child(2),
+.coffe-stop svg path:nth-child(2),
+.fireplace-stop svg path:nth-child(2) {
+    fill: var(--txt-primary-color-s);
 }
