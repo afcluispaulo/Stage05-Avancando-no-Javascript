@@ -73,7 +73,7 @@ body {
     cursor: pointer;
 }
 
-.sounds .button-wrapper button + button {
+.sounds .button-wrapper button {
     margin: 32px;
 }
 
@@ -107,7 +107,7 @@ body {
 .rain-stop svg path,
 .coffe-stop svg path,
 .fireplace-stop svg path {
-    fill: var(--base-color)
+    fill: var(--bg-primary-color-s);
 }
 
 .forest-stop svg path:nth-child(2),
