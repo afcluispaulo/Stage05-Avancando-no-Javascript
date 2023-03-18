@@ -1,4 +1,8 @@
+const minutesDisplay = document.querySelector('.minutes')
+const secondsDisplay = document.querySelector('.seconds')
+
 const buttonPlay = document.querySelector('.play')
+const buttonPause = document.querySelector('.pause')
 const buttonStop = document.querySelector('.stop')
 const buttonAdd = document.querySelector('.add')
 const buttonDecr = document.querySelector('.decr')
@@ -12,15 +16,28 @@ const buttonCoffeStop = document.querySelector('.coffe-stop')
 const buttonFireplace = document.querySelector('.fireplace')
 const buttonFireplaceStop = document.querySelector('.fireplace-stop')
 
-buttonPlay.addEventListener('click', function(){
+import Timer from "./timer.js"
 
+const timer = Timer({
+    minutesDisplay,
+    secondsDisplay,
+})
+
+buttonPlay.addEventListener('click', function(){
+    timer.countdown()
+
+})
+
+buttonPause.addEventListener('click', function() {
+    timer.hold()
 })
 
 buttonStop.addEventListener('click', function(){
-
+    timer.reset()
 })
 
 buttonAdd.addEventListener('click', function() {
+    timer.add5Minutes()
 
 })
 
