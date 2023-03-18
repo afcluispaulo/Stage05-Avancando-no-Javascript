@@ -58,7 +58,16 @@ export default function Timer({
         updateDisplay(minutes, seconds)
     }
 
-  
+    function dec5Minutes(){
+        let minutes = Number(minutesDisplay.textContent) - 5
+        let seconds = Number(secondsDisplay.textContent)
+        updateDisplay(minutes, seconds)
+        
+        if (minutes <= 0 ) {
+            reset()
+        }
+    }
+
     function hold() {
       clearTimeout(timerTimeOut)
     }
@@ -67,8 +76,8 @@ export default function Timer({
       countdown,
       reset,
       updateDisplay,
-      updateMinutes,
       add5Minutes,
+      dec5Minutes,
       hold,
     }
   }

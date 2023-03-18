@@ -24,11 +24,15 @@ const timer = Timer({
 })
 
 buttonPlay.addEventListener('click', function(){
+    buttonPlay.classList.add('hide')
+    buttonPause.classList.remove('hide')
     timer.countdown()
 
 })
 
 buttonPause.addEventListener('click', function() {
+    buttonPause.classList.add('hide')
+    buttonPlay.classList.remove('hide')
     timer.hold()
 })
 
@@ -42,7 +46,7 @@ buttonAdd.addEventListener('click', function() {
 })
 
 buttonDecr.addEventListener('click', function() {
-
+    timer.dec5Minutes()
 })
 
 buttonForest.addEventListener('click', function() {
