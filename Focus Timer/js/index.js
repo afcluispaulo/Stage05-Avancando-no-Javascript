@@ -1,33 +1,37 @@
-const minutesDisplay = document.querySelector('.minutes')
-const secondsDisplay = document.querySelector('.seconds')
-
-const buttonPlay = document.querySelector('.play')
-const buttonPause = document.querySelector('.pause')
-const buttonStop = document.querySelector('.stop')
-const buttonAdd = document.querySelector('.add')
-const buttonDecr = document.querySelector('.decr')
-
-const buttonForest = document.querySelector('.forest')
-const buttonForestStop = document.querySelector('.forest-stop')
-const buttonRain = document.querySelector('.rain')
-const buttonRainStop = document.querySelector('.rain-stop')
-const buttonCoffe = document.querySelector('.coffe')
-const buttonCoffeStop = document.querySelector('.coffe-stop')
-const buttonFireplace = document.querySelector('.fireplace')
-const buttonFireplaceStop = document.querySelector('.fireplace-stop')
-
 import Timer from "./timer.js"
+import sounds from "./sounds.js"
+import {
+    minutesDisplay,
+    secondsDisplay,
+    buttonPlay,
+    buttonPause,
+    buttonStop,
+    buttonAdd,
+    buttonDecr,
+    buttonForest,
+    buttonForestStop,
+    buttonRain,
+    buttonRainStop,
+    buttonCoffe,
+    buttonCoffeStop,
+    buttonFireplace,
+    buttonFireplaceStop,
+} from "./elements.js"
 
 const timer = Timer({
     minutesDisplay,
     secondsDisplay,
 })
 
+
+
+const sound = sounds()
+
 buttonPlay.addEventListener('click', function(){
     buttonPlay.classList.add('hide')
     buttonPause.classList.remove('hide')
     timer.countdown()
-
+    
 })
 
 buttonPause.addEventListener('click', function() {
@@ -50,6 +54,7 @@ buttonDecr.addEventListener('click', function() {
 })
 
 buttonForest.addEventListener('click', function() {
+    sound.forestAudioPlay()
     buttonForest.classList.add('hide')
     buttonForestStop.classList.remove('hide')
 })

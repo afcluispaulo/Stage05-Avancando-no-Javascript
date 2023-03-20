@@ -1,5 +1,6 @@
 export default function() {
-    const forestAudio = new Audio("https://drive.google.com/file/d/1CRHkV72WUMdcqec5GT_KdsqFz0z3VAOA/view")
+
+    const forestAudio = new Audio("https://drive.google.com/file/d/1Ip8xBqAUJ-bty51Wz8JBtX_bWXCgA0P2/view?usp=sharing")
 
     const rainAudio = new Audio("https://drive.google.com/file/d/1Ip8xBqAUJ-bty51Wz8JBtX_bWXCgA0P2/view")
 
@@ -9,6 +10,7 @@ export default function() {
 
     function forestAudioPlay() {
         forestAudio.play()
+        
     }
 
     function forestAudioPause() {
@@ -17,6 +19,7 @@ export default function() {
 
     function rainAudioPlay() { 
         rainAudio.play()
+        forestAudioPause()
     }
 
     function rainAudioPause() {
@@ -35,8 +38,19 @@ export default function() {
         fireplaceAudio.play()
     }
 
-    function fireplacePause() {
+    function fireplaceAudioPause() {
         fireplaceAudio.pause()
+    }
+
+    return {
+        forestAudioPlay,
+        forestAudioPause,
+        rainAudioPlay,
+        rainAudioPause,
+        coffeAudioPlay,
+        coffeAudioPause,
+        fireplaceAudioPlay,
+        fireplaceAudioPause
     }
 
 }

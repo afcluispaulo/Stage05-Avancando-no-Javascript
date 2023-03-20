@@ -9,11 +9,13 @@
    /*--base-color: 240; */
    --base-color: 240;
    --bg-primary-color: hsl(var(--base-color), 11%, 89%);
+   --bg-primary-color-h: hsl(var(--base-color), 11%, 74%);
    --txt-primary-color: hsl(var(--base-color), 6%, 21%);
 
     /* botão com hover, ou quando clicado*/
     --base-color-s: 194;
     --bg-primary-color-s: hsl(var(--base-color-s), 97%, 31%);
+    --bg-primary-color-s-h: hsl(var(--base-color-s), 97%, 26%);
     --base-color-txt-s: 0;
     --txt-primary-color-s: hsl(var(--base-color-txt-s), 0%, 100%);
 
@@ -49,8 +51,8 @@ body {
 .controls {
     display: flex;
     flex-direction: row;
-    gap: 40px;
     margin-top: 48px;
+    gap: 40px;
 }
 
 .controls button {
@@ -59,24 +61,21 @@ body {
     cursor: pointer;
 }
 
-.play svg path
-.stop svg path,
-.add svg path,
-.decr svg path {
-    fill: var()
-}
-
 .sounds {
     grid-area: s;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .sounds button {
-    background-color: white;
     border: none;
     cursor: pointer;
+    width: 138px;
+    height: 152px;
+    
+    border-radius: 24px;
 }
 
 .sounds .button-wrapper button {
@@ -88,37 +87,45 @@ body {
     margin-top: 186px;
 }
 
+.forest ,
+.rain,
+.fireplace,
+.coffe {
+    background-color: var(--bg-primary-color);
+}
+
 .forest svg path,
 .rain svg path,
 .coffe svg path,
 .fireplace svg path {
-    fill: var(--bg-primary-color);
-}
-
-.forest svg path:hover,
-.rain svg path:hover,
-.coffe svg path:hover,
-.fireplace svg path:hover {
-    fill: #8f8f94;
-}
-
-.forest svg path:nth-child(2),
-.rain svg path:nth-child(2),
-.coffe svg path:nth-child(2),
-.fireplace svg path:nth-child(2) {
     fill: var(--txt-primary-color);
+    
+}
+
+.forest:hover,
+.rain:hover,
+.coffe:hover,
+.fireplace:hover {
+    background-color: var(--bg-primary-color-h);
+}
+
+.forest-stop,
+.rain-stop,
+.coffe-stop,
+.fireplace-stop {
+    background-color: var(--bg-primary-color-s);
+}
+
+.forest-stop:hover,
+.rain-stop:hover,
+.coffe-stop:hover,
+.fireplace-stop:hover {
+    background-color: var(--bg-primary-color-s-h);
 }
 
 .forest-stop svg path,
 .rain-stop svg path,
 .coffe-stop svg path,
 .fireplace-stop svg path {
-    fill: var(--bg-primary-color-s);
-}
-
-.forest-stop svg path:nth-child(2),
-.rain-stop svg path:nth-child(2),
-.coffe-stop svg path:nth-child(2),
-.fireplace-stop svg path:nth-child(2) {
     fill: var(--txt-primary-color-s);
 }
