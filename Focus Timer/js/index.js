@@ -16,10 +16,14 @@ import {
     buttonCoffeStop,
     buttonFireplace,
     buttonFireplaceStop,
+
+    bbRain,
     
     slideBar1,
     buttonBox,
-    borderStop
+    rainSlide,
+    bbCoffe,
+    coffeSlide,
 } from "./elements.js"
 
 const timer = Timer({
@@ -93,7 +97,10 @@ buttonRain.addEventListener('click', function() {
     sound.fireplaceAudioPause()
 
     buttonRain.classList.add('hide')
-    buttonRainStop.classList.remove('hide')
+    buttonRainStop.classList.remove("hide")
+
+    bbRain.classList.add("stop")
+    rainSlide.classList.add("test-click")
 })
 
 buttonRainStop.addEventListener('click', function() {
@@ -101,6 +108,9 @@ buttonRainStop.addEventListener('click', function() {
 
     buttonRainStop.classList.add('hide')
     buttonRain.classList.remove('hide')
+
+    bbRain.classList.remove("stop")
+    rainSlide.classList.remove("test-click")
 })
 
 buttonCoffe.addEventListener('click', function() {
@@ -112,6 +122,9 @@ buttonCoffe.addEventListener('click', function() {
 
     buttonCoffe.classList.add('hide')
     buttonCoffeStop.classList.remove('hide')
+
+    bbCoffe.classList.add("stop")
+    coffeSlide.classList.add("test-click")
 })
  
 buttonCoffeStop.addEventListener('click', function() {
@@ -119,6 +132,9 @@ buttonCoffeStop.addEventListener('click', function() {
 
     buttonCoffeStop.classList.add('hide')
     buttonCoffe.classList.remove('hide')
+
+    bbCoffe.classList.remove("stop")
+    coffeSlide.classList.remove("test-click")
 })
 
 buttonFireplace.addEventListener('click', function() {

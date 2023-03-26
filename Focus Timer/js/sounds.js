@@ -2,6 +2,7 @@ import {
     slideBar1,
     rainSlide,
     coffeSlide,
+    fireplaceSlide,
 
 } from "./elements.js"
 
@@ -37,7 +38,7 @@ export default function() {
 
     function coffeAudioPlay() {
         coffeAudio.play()
-        coffeAudio.volume = rainSlide.value 
+        coffeAudio.volume = coffeSlide.value 
 
     }
 
@@ -47,6 +48,7 @@ export default function() {
 
     function fireplaceAudioPlay() {
         fireplaceAudio.play()
+        fireplaceAudio.volume = fireplaceSlide.value
     }
 
     function fireplaceAudioPause() {

@@ -11,6 +11,10 @@ const buttonDecr = document.querySelector('.decr')
 //const buttonForest = document.getElementById("#forest")
 
 const buttonBox = document.querySelector('.buttonBox')
+
+const bbRain = document.getElementById("buttonBoxRain")
+const bbCoffe = document.getElementById("buttonBoxCoffe")
+
 const borderStop = document.querySelector('.stop')
 const buttonForestStop = document.querySelector('.forest-stop')
 const buttonRain = document.querySelector('.rain')
@@ -23,6 +27,7 @@ const buttonFireplaceStop = document.querySelector('.fireplace-stop')
 const slideBar1 = document.querySelector('.test')
 const rainSlide = document.getElementById("rainSlide")
 const coffeSlide = document.getElementById("coffeSlide")
+const fireplaceSlide = document.getElementById("fireplaceSlide")
 
 export {
     minutesDisplay,
@@ -41,9 +46,13 @@ export {
     buttonFireplace,
     buttonFireplaceStop,
 
+    bbRain,
+    bbCoffe,
+
     slideBar1,
     rainSlide,
     coffeSlide,
+    fireplaceSlide,
 
 
     buttonBox,
