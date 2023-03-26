@@ -1,16 +1,24 @@
+import {
+    slideBar1,
+    rainSlide,
+    coffeSlide,
+
+} from "./elements.js"
+
 export default function() {
 
-    const forestAudio = new Audio("https://drive.google.com/file/d/1Ip8xBqAUJ-bty51Wz8JBtX_bWXCgA0P2/view?usp=sharing")
+    const forestAudio = new Audio("./assets/Floresta.wav")
 
-    const rainAudio = new Audio("https://drive.google.com/file/d/1Ip8xBqAUJ-bty51Wz8JBtX_bWXCgA0P2/view")
+    const rainAudio = new Audio("./assets/Chuva.wav")
 
-    const coffeAudio = new Audio("https://drive.google.com/file/d/1Ip8xBqAUJ-bty51Wz8JBtX_bWXCgA0P2/view")
-
-    const fireplaceAudio = new Audio("https://drive.google.com/file/d/1MakaBPxJvTa_whaSM3kEbRcxiVd1GRCB/view")
+    const coffeAudio = new Audio("./assets/Cafeteria.wav")
+ 
+    const fireplaceAudio = new Audio("./assets/Lareira.wav")
 
     function forestAudioPlay() {
         forestAudio.play()
-        
+        forestAudio.volume = slideBar1.value
+       
     }
 
     function forestAudioPause() {
@@ -19,7 +27,8 @@ export default function() {
 
     function rainAudioPlay() { 
         rainAudio.play()
-        forestAudioPause()
+        rainAudio.volume = rainSlide.value
+
     }
 
     function rainAudioPause() {
@@ -28,6 +37,8 @@ export default function() {
 
     function coffeAudioPlay() {
         coffeAudio.play()
+        coffeAudio.volume = rainSlide.value 
+
     }
 
     function coffeAudioPause() {

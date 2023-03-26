@@ -6,13 +6,14 @@
 
 :root {
    /* cor botão padrão */
-   /*--base-color: 240; */
    --base-color: 240;
    --bg-primary-color: hsl(var(--base-color), 11%, 89%);
    --bg-primary-color-h: hsl(var(--base-color), 11%, 74%);
    --txt-primary-color: hsl(var(--base-color), 6%, 21%);
 
-    /* botão com hover, ou quando clicado*/
+   --sound-primary-color: hsla(var(--base-color), 6%, 21%, 1);
+
+    /* quando clicado */
     --base-color-s: 194;
     --bg-primary-color-s: hsl(var(--base-color-s), 97%, 31%);
     --bg-primary-color-s-h: hsl(var(--base-color-s), 97%, 26%);
@@ -66,19 +67,39 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 32px;
+}
+
+.buttonBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border: none;
+    width: 138px;
+    height: 152px;
+    border-radius: 24px;
     
+
+    background-color: var(--bg-primary-color);
+}
+
+.stop {
+    background-color: var(--bg-primary-color-s);
 }
 
 .sounds button {
     border: none;
     cursor: pointer;
-    width: 138px;
-    height: 152px;
     
-    border-radius: 24px;
 }
 
-.sounds .button-wrapper button {
+.button-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.sounds .button-wrapper .buttonBox {
     margin: 32px;
 }
 
@@ -87,26 +108,64 @@ body {
     margin-top: 186px;
 }
 
-.forest ,
-.rain,
-.fireplace,
-.coffe {
+.buttonBox .forest,
+.buttonBox .rain,
+.buttonBox .fireplace,
+.buttonBox .coffe {
+    margin-top: 5px;
     background-color: var(--bg-primary-color);
+    border: none;
+}
+
+
+
+.test  {
+  appearance: none;
+  width: 78px;
+  height: 4px;
+  background: var(--txt-primary-color); 
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  border-radius: 5px;
+
+  margin-top: -25px;
+}
+
+.test::-webkit-slider-thumb {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: var(--txt-primary-color);
+    outline: none;
+    cursor: pointer;
+    border-radius: 55px;
+  }
+
+.test-click {
+    appearance: none;
+    width: 98px;
+    height: 4px;
+    background: var(--txt-primary-color-s); /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    border-radius: 5px;
+}
+
+.test-click::-webkit-slider-thumb {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: var(--txt-primary-color-s);
+    cursor: pointer;
+    border-radius: 55px;
 }
 
 .forest svg path,
 .rain svg path,
 .coffe svg path,
 .fireplace svg path {
-    fill: var(--txt-primary-color);
     
-}
-
-.forest:hover,
-.rain:hover,
-.coffe:hover,
-.fireplace:hover {
-    background-color: var(--bg-primary-color-h);
+    fill: var(--txt-primary-color);
 }
 
 .forest-stop,
