@@ -99,16 +99,7 @@ buttonForest.addEventListener('click', function() {
     sound.rainAudioPause()
     sound.coffeAudioPause()
 
-    // adicionando evento de troca de css, quando tocado
-    //buttonForest.classList.add("hide")
-    //buttonForestStop.classList.remove("hide")
-
-    //buttonBox.classList.add("stop")
-    //slideBar1.classList.add("test-click")
     controls.playForest()
-    // fechando outros botões
-    
-    // chuva
    
     bbRain.classList.remove("stop")
     rainSlide.classList.remove("test-click")
@@ -142,11 +133,7 @@ buttonRain.addEventListener('click', function() {
     sound.coffeAudioPause()
     sound.fireplaceAudioPause()
 
-    buttonRain.classList.add('hide')
-    buttonRainStop.classList.remove("hide")
-
-    bbRain.classList.add("stop")
-    rainSlide.classList.add("test-click")
+    controls.playRain()
 })
 
 buttonRainStop.addEventListener('click', function() {
@@ -166,11 +153,7 @@ buttonCoffe.addEventListener('click', function() {
     sound.rainAudioPause()
     sound.fireplaceAudioPause()
 
-    buttonCoffe.classList.add('hide')
-    buttonCoffeStop.classList.remove('hide')
-
-    bbCoffe.classList.add("stop")
-    coffeSlide.classList.add("test-click")
+    controls.playCoffe()
 })
  
 buttonCoffeStop.addEventListener('click', function() {
@@ -190,11 +173,7 @@ buttonFireplace.addEventListener('click', function() {
     sound.rainAudioPause()
     sound.coffeAudioPause()
 
-    buttonFireplace.classList.add('hide')
-    buttonFireplaceStop.classList.remove('hide')
-
-    bbFireplace.classList.add("stop")
-    fireplaceSlide.classList.add("test-click")
+    controls.playFireplace()
 
 })
 

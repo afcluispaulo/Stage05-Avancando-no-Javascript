@@ -17,9 +17,7 @@ export default function Controls({
     buttonFireplace,
     buttonFireplaceStop,
     bbFireplace,
-    fireplaceSlide
-    
-    
+    fireplaceSlide    
 
 }) {
     function playForest() {
@@ -59,5 +57,8 @@ export default function Controls({
         playRain,
         playCoffe,
         playFireplace,
+
+        
     }
+
 }
