@@ -1,5 +1,7 @@
 import Timer from "./timer.js"
 import sounds from "./sounds.js"
+import Controls from "./controls.js"
+
 import {
     minutesDisplay,
     secondsDisplay,
@@ -27,6 +29,28 @@ import {
     coffeSlide,
     fireplaceSlide,
 } from "./elements.js"
+
+const controls = Controls({
+    buttonForest,
+    buttonForestStop,
+    buttonBox,
+    slideBar1,
+        
+    buttonCoffe,
+    buttonCoffeStop,
+    bbCoffe,
+    coffeSlide,
+
+    buttonRain,
+    buttonRainStop,
+    bbRain,
+    rainSlide,
+
+    buttonFireplace,
+    buttonFireplaceStop,
+    bbFireplace,
+    fireplaceSlide
+})
 
 const timer = Timer({
     minutesDisplay,
@@ -69,18 +93,35 @@ buttonDecr.addEventListener('click', function() {
 buttonForest.addEventListener('click', function() {
     sound.forestAudioPlay()
     
+    // pausando outros botões
+
     sound.fireplaceAudioPause()
     sound.rainAudioPause()
     sound.coffeAudioPause()
 
-    buttonForest.classList.add("hide")
-    buttonForestStop.classList.remove("hide")
+    // adicionando evento de troca de css, quando tocado
+    //buttonForest.classList.add("hide")
+    //buttonForestStop.classList.remove("hide")
 
-
-    buttonBox.classList.add("stop")
-    slideBar1.classList.add("test-click")
-
+    //buttonBox.classList.add("stop")
+    //slideBar1.classList.add("test-click")
+    controls.playForest()
     // fechando outros botões
+    
+    // chuva
+   
+    bbRain.classList.remove("stop")
+    rainSlide.classList.remove("test-click")
+
+    // cafeteria
+    buttonCoffeStop.classList.add("hide")
+    bbCoffe.classList.remove("stop")
+    coffeSlide.classList.remove("test-click")
+
+    // lareira
+    
+    bbFireplace.classList.remove("stop")
+    fireplaceSlide.classList.remove("test-click")
 
 })
 
@@ -94,7 +135,7 @@ buttonForestStop.addEventListener('click', function() {
     slideBar1.classList.remove("test-click")
 })
 
-buttonRain.addEventListener('click', function() {
+buttonRain.addEventListener('click', function() {    
     sound.rainAudioPlay()
 
     sound.forestAudioPause()
