@@ -119,11 +119,7 @@ buttonForest.addEventListener('click', function() {
 buttonForestStop.addEventListener('click', function() {
     sound.forestAudioPause()
 
-    buttonForestStop.classList.add("hide")
-    buttonForest.classList.remove("hide")
-
-    buttonBox.classList.remove("stop")
-    slideBar1.classList.remove("test-click")
+    controls.stopForest()
 })
 
 buttonRain.addEventListener('click', function() {    
@@ -139,11 +135,8 @@ buttonRain.addEventListener('click', function() {
 buttonRainStop.addEventListener('click', function() {
     sound.rainAudioPause()
 
-    buttonRainStop.classList.add('hide')
-    buttonRain.classList.remove('hide')
-
-    bbRain.classList.remove("stop")
-    rainSlide.classList.remove("test-click")
+    controls.stopRain()
+    
 })
 
 buttonCoffe.addEventListener('click', function() {
@@ -159,11 +152,7 @@ buttonCoffe.addEventListener('click', function() {
 buttonCoffeStop.addEventListener('click', function() {
     sound.coffeAudioPause()
 
-    buttonCoffeStop.classList.add('hide')
-    buttonCoffe.classList.remove('hide')
-
-    bbCoffe.classList.remove("stop")
-    coffeSlide.classList.remove("test-click")
+    controls.stopCoffe()
 })
 
 buttonFireplace.addEventListener('click', function() {
@@ -180,10 +169,6 @@ buttonFireplace.addEventListener('click', function() {
 buttonFireplaceStop.addEventListener('click', function() {
     sound.fireplaceAudioPause()
 
-    buttonFireplaceStop.classList.add('hide')
-    buttonFireplace.classList.remove('hide')
-
-    bbFireplace.classList.remove("stop")
-    fireplaceSlide.classList.remove("test-click")
+    controls.stopFireplace()
     
 })

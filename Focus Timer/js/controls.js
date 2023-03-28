@@ -52,13 +52,49 @@ export default function Controls({
         fireplaceSlide.classList.add("test-click")
     }
 
+    function stopForest() {
+        buttonForestStop.classList.add("hide")
+        buttonForest.classList.remove("hide")
+
+        buttonBox.classList.remove("stop")
+        slideBar1.classList.remove("test-click")
+    }
+
+    function stopRain() {
+        buttonRainStop.classList.add('hide')
+        buttonRain.classList.remove('hide')
+
+        bbRain.classList.remove("stop")
+        rainSlide.classList.remove("test-click")
+    }
+
+    function stopCoffe() {
+        buttonCoffeStop.classList.add('hide')
+        buttonCoffe.classList.remove('hide')
+
+        bbCoffe.classList.remove("stop")
+        coffeSlide.classList.remove("test-click")
+    }
+
+    function stopFireplace() {
+        buttonFireplaceStop.classList.add('hide')
+        buttonFireplace.classList.remove('hide')
+
+        bbFireplace.classList.remove("stop")
+        fireplaceSlide.classList.remove("test-click")
+    }
+
     return {
         playForest,
         playRain,
         playCoffe,
         playFireplace,
 
-        
+        stopForest,
+        stopRain,
+        stopCoffe,
+        stopFireplace,
+
     }
 
 }
