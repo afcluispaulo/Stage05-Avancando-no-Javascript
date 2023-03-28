@@ -10,10 +10,11 @@ const buttonDecr = document.querySelector('.decr')
  const buttonForest = document.querySelector('.forest')
 //const buttonForest = document.getElementById("#forest")
 
-const buttonBox = document.querySelector('.buttonBox')
+const buttonBox = document.querySelector('.buttonBox') // falta mudar o nome da variável
 
 const bbRain = document.getElementById("buttonBoxRain")
 const bbCoffe = document.getElementById("buttonBoxCoffe")
+const bbFireplace = document.getElementById("buttonBoxFireplace")
 
 const borderStop = document.querySelector('.stop')
 const buttonForestStop = document.querySelector('.forest-stop')
@@ -46,17 +47,17 @@ export {
     buttonFireplace,
     buttonFireplaceStop,
 
+    buttonBox,
     bbRain,
     bbCoffe,
+    bbFireplace,
 
     slideBar1,
     rainSlide,
     coffeSlide,
     fireplaceSlide,
 
-
-    buttonBox,
-    borderStop
+    borderStop,
 }
 
  /* 

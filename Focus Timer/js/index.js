@@ -17,13 +17,15 @@ import {
     buttonFireplace,
     buttonFireplaceStop,
 
-    bbRain,
-    
-    slideBar1,
     buttonBox,
-    rainSlide,
+    bbRain,
     bbCoffe,
+    bbFireplace, 
+
+    slideBar1,    
+    rainSlide,
     coffeSlide,
+    fireplaceSlide,
 } from "./elements.js"
 
 const timer = Timer({
@@ -74,8 +76,11 @@ buttonForest.addEventListener('click', function() {
     buttonForest.classList.add("hide")
     buttonForestStop.classList.remove("hide")
 
+
     buttonBox.classList.add("stop")
     slideBar1.classList.add("test-click")
+
+    // fechando outros botões
 
 })
 
@@ -146,6 +151,10 @@ buttonFireplace.addEventListener('click', function() {
 
     buttonFireplace.classList.add('hide')
     buttonFireplaceStop.classList.remove('hide')
+
+    bbFireplace.classList.add("stop")
+    fireplaceSlide.classList.add("test-click")
+
 })
 
 buttonFireplaceStop.addEventListener('click', function() {
@@ -153,5 +162,8 @@ buttonFireplaceStop.addEventListener('click', function() {
 
     buttonFireplaceStop.classList.add('hide')
     buttonFireplace.classList.remove('hide')
+
+    bbFireplace.classList.remove("stop")
+    fireplaceSlide.classList.remove("test-click")
     
 })
