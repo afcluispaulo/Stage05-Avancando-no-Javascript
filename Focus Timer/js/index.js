@@ -93,26 +93,12 @@ buttonDecr.addEventListener('click', function() {
 buttonForest.addEventListener('click', function() {
     sound.forestAudioPlay()
     
-    // pausando outros botões
 
     sound.fireplaceAudioPause()
     sound.rainAudioPause()
     sound.coffeAudioPause()
 
     controls.playForest()
-   
-    bbRain.classList.remove("stop")
-    rainSlide.classList.remove("test-click")
-
-    // cafeteria
-    buttonCoffeStop.classList.add("hide")
-    bbCoffe.classList.remove("stop")
-    coffeSlide.classList.remove("test-click")
-
-    // lareira
-    
-    bbFireplace.classList.remove("stop")
-    fireplaceSlide.classList.remove("test-click")
 
 })
 
