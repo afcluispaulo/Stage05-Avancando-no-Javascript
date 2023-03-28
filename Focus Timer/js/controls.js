@@ -26,6 +26,10 @@ export default function Controls({
 
         buttonBox.classList.add("stop")
         slideBar1.classList.add("test-click")
+
+        stopRain()
+        stopCoffe()
+        stopFireplace()
     }
 
     function playRain() {
@@ -34,6 +38,10 @@ export default function Controls({
 
         bbRain.classList.add("stop")
         rainSlide.classList.add("test-click")
+
+        stopForest()
+        stopCoffe()
+        stopFireplace()
     }
 
     function playCoffe() {
@@ -42,6 +50,10 @@ export default function Controls({
 
         bbCoffe.classList.add("stop")
         coffeSlide.classList.add("test-click")
+        
+        stopForest()
+        stopRain()
+        stopFireplace()
     }
 
     function playFireplace() {
@@ -50,6 +62,10 @@ export default function Controls({
 
         bbFireplace.classList.add("stop")
         fireplaceSlide.classList.add("test-click")
+
+        stopForest()
+        stopRain()
+        stopCoffe()
     }
 
     function stopForest() {
