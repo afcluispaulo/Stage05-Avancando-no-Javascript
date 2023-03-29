@@ -5,6 +5,10 @@
 }
 
 :root {
+    /* background */
+    --base-color-bg: 0;
+    --bg-color: hsl(var(--base-color-bg), 0%, 90%);
+
    /* cor botão padrão */
    --base-color: 240;
    --bg-primary-color: hsl(var(--base-color), 11%, 89%);
@@ -19,9 +23,13 @@
     --bg-primary-color-s-h: hsl(var(--base-color-s), 97%, 26%);
     --base-color-txt-s: 0;
     --txt-primary-color-s: hsl(var(--base-color-txt-s), 0%, 100%);
-
 }
 
+.dark {
+    --bg-color: hsl(var(--base-color-bg), 0%, 0%);
+    --bg-primary-color: hsl(var(--bg-color), 6%, 17%);
+    --txt-primary-color-s: hsl(var(--base-color-txt-s), 0%, 100%);
+}
 
 .hide {
     display: none;
@@ -32,6 +40,7 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "m s";
     align-items: center;
+    background-color: var(--bg-color);
 }
 
 .ThemeButtons {
@@ -64,7 +73,7 @@ body {
 }
 
 .controls button {
-    background-color: white;
+    background-color: var(--bg-color);
     border: none;
     cursor: pointer;
 }
