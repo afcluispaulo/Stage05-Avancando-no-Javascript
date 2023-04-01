@@ -81,8 +81,6 @@ buttonWhite.addEventListener('click', function() {
     buttonDark.classList.remove("hide")
 })
 
-
-
 buttonPlay.addEventListener('click', function(){
     buttonPlay.classList.add('hide')
     buttonPause.classList.remove('hide')
@@ -98,7 +96,11 @@ buttonPause.addEventListener('click', function() {
 })
 
 buttonStop.addEventListener('click', function(){
+    buttonPause.classList.add('hide')
+    buttonPlay.classList.remove('hide')
+
     timer.reset()
+
 })
 
 buttonAdd.addEventListener('click', function() {
