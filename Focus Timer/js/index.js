@@ -69,10 +69,16 @@ const sound = sounds()
 
 buttonDark.addEventListener('click', function() {
     theme.classList.add('dark')
+
+    buttonDark.classList.add("hide")
+    buttonWhite.classList.remove("hide")
 })
 
 buttonWhite.addEventListener('click', function() {
     theme.classList.remove('dark')
+
+    buttonWhite.classList.add("hide")
+    buttonDark.classList.remove("hide")
 })
 
 
