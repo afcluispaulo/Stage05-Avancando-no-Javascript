@@ -45,7 +45,7 @@ body {
     background-color: var(--bg-color);
 }
 
-.ThemeButtons {
+.theme {
     position: absolute;
     top: 60px;
     right: 60px;
@@ -76,6 +76,7 @@ body {
 
 }
 
+.theme button, 
 .controls button {
     background-color: var(--bg-color);
     border: none;
@@ -109,7 +110,7 @@ body {
     background-color: var(--bg-primary-color-s);
 }
 
-.sounds button {
+.sounds button{
     border: none;
     cursor: pointer;
     
@@ -138,8 +139,6 @@ body {
     border: none;
     
 }
-
-
 
 .test  {
   appearance: none;
@@ -182,6 +181,8 @@ body {
     border-radius: 55px;
 }
 
+.white-theme svg path,
+.dark-theme svg path,
 .forest svg path,
 .rain svg path,
 .coffe svg path,

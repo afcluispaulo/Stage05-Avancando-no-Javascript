@@ -3,13 +3,19 @@ import sounds from "./sounds.js"
 import Controls from "./controls.js"
 
 import {
+    theme,
+    buttonWhite,
+    buttonDark,
+
     minutesDisplay,
     secondsDisplay,
+
     buttonPlay,
     buttonPause,
     buttonStop,
     buttonAdd,
     buttonDecr,
+    
     buttonForest,
     buttonForestStop,
     buttonRain,
@@ -28,6 +34,7 @@ import {
     rainSlide,
     coffeSlide,
     fireplaceSlide,
+   
 } from "./elements.js"
 
 const controls = Controls({
@@ -59,9 +66,16 @@ const timer = Timer({
 
 const sound = sounds()
 
-function forestAudioVolumeTest() {
-    sound.forestAudioVolume()
-}
+
+buttonDark.addEventListener('click', function() {
+    theme.classList.add('dark')
+})
+
+buttonWhite.addEventListener('click', function() {
+    theme.classList.remove('dark')
+})
+
+
 
 buttonPlay.addEventListener('click', function(){
     buttonPlay.classList.add('hide')
