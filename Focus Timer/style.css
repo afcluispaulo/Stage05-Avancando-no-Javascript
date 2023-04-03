@@ -112,7 +112,6 @@ body {
     height: 15.2rem;
     border-radius: 2.4rem;
     
-
     background-color: var(--bg-primary-color);
 }
 
@@ -213,12 +212,7 @@ body {
     background-color: var(--bg-primary-color-s);
 }
 
-.forest-stop:hover,
-.rain-stop:hover,
-.coffe-stop:hover,
-.fireplace-stop:hover {
-    background-color: var(--bg-primary-color-s-h);
-}
+
 
 .forest-stop svg path,
 .rain-stop svg path,
