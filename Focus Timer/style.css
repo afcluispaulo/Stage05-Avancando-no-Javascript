@@ -48,13 +48,6 @@ body {
     background-color: var(--bg-color);
 }
 
-/*.wrap {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-} */
-
 .theme {
     position: absolute;
     top: 6.0rem;
