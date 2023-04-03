@@ -41,10 +41,10 @@
 }
 
 body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "m s";
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: var(--bg-color);
 }
 
@@ -71,7 +71,6 @@ body {
 .timer span {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 500;
     font-size: 12.6rem;
     line-height: 14.8rem;
     color: var(--txt-primary-color);
@@ -99,7 +98,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3.2rem;
+    gap: 0.1rem;
 }
 
 .buttonBox {
@@ -134,9 +133,11 @@ body {
     margin: 3.2rem;
 }
 
-.menu, 
+.menu {
+    margin-top: 12.6rem;
+}
 .sounds {
-    margin-top: 18.6rem;
+    margin-top: 4rem;
 }
 
 .buttonBox .forest,
@@ -159,6 +160,35 @@ body {
   border-radius: .5rem;
 
   margin-top: -2.5rem;
+}
+
+
+.white-theme svg path,
+.dark-theme svg path,
+.forest svg path,
+.rain svg path,
+.coffe svg path,
+.fireplace svg path,
+.play svg path,
+.pause svg path,
+.add svg path,
+.decr svg path,
+.stop svg path {
+    fill: var(--txt-primary-color);
+}
+
+.forest-stop,
+.rain-stop,
+.coffe-stop,
+.fireplace-stop {
+    background-color: var(--bg-primary-color-s);
+}
+
+.forest-stop svg path,
+.rain-stop svg path,
+.coffe-stop svg path,
+.fireplace-stop svg path {
+    fill: var(--txt-primary-color-s);
 }
 
 .test::-webkit-slider-thumb {
@@ -190,33 +220,30 @@ body {
     border-radius: 5.5rem;
 }
 
-.white-theme svg path,
-.dark-theme svg path,
-.forest svg path,
-.rain svg path,
-.coffe svg path,
-.fireplace svg path,
-.play svg path,
-.pause svg path,
-.add svg path,
-.decr svg path,
-.stop svg path {
-    fill: var(--txt-primary-color);
-    
-}
+@media (min-width: 620px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "m s";
+        align-items: center;
+        background-color: var(--bg-color);
+    }
 
-.forest-stop,
-.rain-stop,
-.coffe-stop,
-.fireplace-stop {
-    background-color: var(--bg-primary-color-s);
-}
+    .menu, 
+    .sounds {
+    margin-top: 18.6rem;
+    }
 
-
-
-.forest-stop svg path,
-.rain-stop svg path,
-.coffe-stop svg path,
-.fireplace-stop svg path {
-    fill: var(--txt-primary-color-s);
+    .buttonBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3.0rem;
+        border: none;
+        width: 13.8rem;
+        height: 15.2rem;
+        border-radius: 2.4rem;
+        
+        background-color: var(--bg-primary-color);
+    }
 }
