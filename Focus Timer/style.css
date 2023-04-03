@@ -23,6 +23,8 @@
     --bg-primary-color-s-h: hsl(var(--base-color-s), 97%, 26%);
     --base-color-txt-s: 0;
     --txt-primary-color-s: hsl(var(--base-color-txt-s), 0%, 100%);
+
+    font-size: 62.5%;
 }
 
 .dark {
@@ -31,6 +33,7 @@
     --txt-primary-color: hsl(var(--base-color-txt-s), 0%, 100%);
     --txt-primary-color-s: hsl(var(--base-color-txt-s), 0%, 100%);
     --bg-primary-color-s: hsl(195, 74%, 15%);
+    
 }
 
 .hide {
@@ -45,10 +48,17 @@ body {
     background-color: var(--bg-color);
 }
 
+/*.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+} */
+
 .theme {
     position: absolute;
-    top: 60px;
-    right: 60px;
+    top: 6.0rem;
+    right: 6.0rem;
 }
 
 .menu {
@@ -62,8 +72,8 @@ body {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 126.166px;
-    line-height: 148px;
+    font-size: 12.6rem;
+    line-height: 14.8rem;
     color: var(--txt-primary-color);
 }
 
@@ -71,8 +81,8 @@ body {
 .controls {
     display: flex;
     flex-direction: row;
-    margin-top: 48px;
-    gap: 40px;
+    margin-top: 4.8rem;
+    gap: 4.0rem;
 
 }
 
@@ -89,18 +99,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: 3.2rem;
 }
 
 .buttonBox {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 3.0rem;
     border: none;
-    width: 138px;
-    height: 152px;
-    border-radius: 24px;
+    width: 13.8rem;
+    height: 15.2rem;
+    border-radius: 2.4rem;
     
 
     background-color: var(--bg-primary-color);
@@ -110,7 +120,7 @@ body {
     background-color: var(--bg-primary-color-s);
 }
 
-.sounds button{
+.sounds button {
     border: none;
     cursor: pointer;
     
@@ -122,19 +132,19 @@ body {
 }
 
 .sounds .button-wrapper .buttonBox {
-    margin: 32px;
+    margin: 3.2rem;
 }
 
 .menu, 
 .sounds {
-    margin-top: 186px;
+    margin-top: 18.6rem;
 }
 
 .buttonBox .forest,
 .buttonBox .rain,
 .buttonBox .fireplace,
 .buttonBox .coffe {
-    margin-top: 5px;
+    margin-top: .5rem;
     background-color: var(--bg-primary-color);
     border: none;
     
@@ -142,43 +152,43 @@ body {
 
 .test  {
   appearance: none;
-  width: 78px;
-  height: 4px;
+  width: 7.8rem;
+  height: .4rem;
   background: var(--txt-primary-color); 
   outline: none; /* Remove outline */
   opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-  border-radius: 5px;
+  border-radius: .5rem;
 
-  margin-top: -25px;
+  margin-top: -2.5rem;
 }
 
 .test::-webkit-slider-thumb {
     appearance: none;
-    width: 16px;
-    height: 16px;
+    width: 1.6rem;
+    height: 1.6rem;
     background: var(--txt-primary-color);
     outline: none;
     cursor: pointer;
-    border-radius: 55px;
+    border-radius: 5.5rem;
   }
 
 .test-click {
     appearance: none;
-    width: 98px;
-    height: 4px;
+    width: 9.8rem;
+    height: .4rem;
     background: var(--txt-primary-color-s); /* Grey background */
     outline: none; /* Remove outline */
     opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-    border-radius: 5px;
+    border-radius: .5rem;
 }
 
 .test-click::-webkit-slider-thumb {
     appearance: none;
-    width: 16px;
-    height: 16px;
+    width: 1.6rem;
+    height: 1.6rem;
     background: var(--txt-primary-color-s);
     cursor: pointer;
-    border-radius: 55px;
+    border-radius: 5.5rem;
 }
 
 .white-theme svg path,
