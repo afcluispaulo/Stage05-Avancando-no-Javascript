@@ -61,13 +61,22 @@ body {
     align-items: center;
 }
 
+.timer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
 .timer span {
     font-family: 'Roboto';
     font-style: normal;
     font-size: 12.6rem;
     line-height: 14.8rem;
     color: var(--txt-primary-color);
+
+
 }
+
 
 
 .controls {
@@ -195,13 +204,14 @@ body {
   }
 
 .test-click {
-    appearance: none;
-    width: 9.8rem;
-    height: .4rem;
-    background: var(--txt-primary-color-s); /* Grey background */
-    outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-    border-radius: .5rem;
+  width: 7.8rem;
+  height: .4rem;
+  background: var(--txt-primary-color-s); 
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  border-radius: .5rem;
+
+  margin-top: -2.5rem;
 }
 
 .test-click::-webkit-slider-thumb {
@@ -213,7 +223,7 @@ body {
     border-radius: 5.5rem;
 }
 
-@media (min-width: 620px) {
+@media (min-width: 520px) {
     body {
         display: grid;
         grid-template-columns: 1fr 1fr;

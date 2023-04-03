@@ -68,4 +68,3 @@ const timer = Timer({
 const sound = sounds()
 
 Events({ theme, timer, controls, sound})
-
