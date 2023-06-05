@@ -13,6 +13,8 @@ const btnTry = document.querySelector("#btnTry")
 const btnTry2 = document.querySelector("#btnTry2")
 const btn = document.querySelector('button')
 
+console.log("test")
+
 let countClick = 0
 
 function handleTryClick(event) {
