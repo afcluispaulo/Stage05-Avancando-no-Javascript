@@ -23,9 +23,9 @@ function handleTryClick(event) {
    
     if (countClick == 1) {
         btn.classList.add("hide")
-
+        
         handleAnimationRepeat()
-       
+        
         handleToScreen2()
     }
 }
@@ -82,6 +82,9 @@ function handleAnimationRepeat() {
     setTimeout(() => {
         topImg.classList.add("hide")
     }, 800);
+    
+
+    
 }
 
 function handleToScreen2() {
@@ -93,6 +96,7 @@ function handleToScreen2() {
         screen2.classList.remove("hide-absolute")
         
     }, 1300);
+    
  }
 
 
