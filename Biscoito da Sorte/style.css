@@ -241,26 +241,10 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
 
-.box2 {
-    padding: 1.0rem;
-    gap: 1.0rem;
-    width: 5.3rem;
-    height: 5.7rem;
-    margin-right: 2.4rem;
-    margin-top: 12.7rem;
-
-    background-color: #E4EDF1;
-    box-shadow: .2rem .2rem .2rem rgba(85, 85, 85, 0.5);
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-     
     animation: downtopMsg 2.5s;
 }
+
 
 .screen2 p {
     font-family: 'Dancing Script', sans-serif;
@@ -307,13 +291,13 @@ body {
 @keyframes downtopMsg {
     0% {
         opacity: 0;
-        transform: translateY();
         
     }
-    
+
     100% {
         opacity: 1;
-        transform: translateY(-2.1rem);
+       transform: translateY(-1.5rem);
+       
     }
 }
 
