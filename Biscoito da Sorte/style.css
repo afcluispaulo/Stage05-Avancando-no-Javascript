@@ -200,8 +200,7 @@ body {
 
     position: relative;
 
-    margin-top: -12rem;
-
+    
 
 }
 
@@ -257,11 +256,6 @@ body {
      
     animation: downtopMsg 2.5s;
 }
-
-.box2Animation {
-    animation: downtopMsg 700ms;
-}
-
 
 .screen2 p {
     font-family: 'Dancing Script', sans-serif;
