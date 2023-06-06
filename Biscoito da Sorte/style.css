@@ -54,6 +54,11 @@ body {
     border: none;
 }
 
+.screen1 button {
+    background-color: #FFFFFF;
+    border: none;
+}
+
 .btn {
     background-color: #FFFFFF;
     border: none;
