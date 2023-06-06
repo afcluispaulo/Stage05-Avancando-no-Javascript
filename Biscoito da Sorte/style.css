@@ -254,15 +254,14 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
+     
+    animation: downtopMsg 2.5s;
 }
 
 .box2Animation {
     animation: downtopMsg 700ms;
 }
-.box2 p {
-    display: none;
-}
+
 
 .screen2 p {
     font-family: 'Dancing Script', sans-serif;

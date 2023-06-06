@@ -91,7 +91,7 @@ function handleToScreen2() {
 
     setTimeout(() => {
         screen2.classList.remove("hide-absolute")
-        handleAnimationDownTopMsg()
+        
     }, 1300);
  }
 
@@ -102,19 +102,13 @@ function handleAnimationDownTopMsg() {
     }, 300)
 
     setTimeout(() => {
-        boxMsg2.classList.add("box2Animation")
-    }, 400);
-
-    setTimeout(() => {
         boxMsg2.classList.add("hide-absolute")
     }, 700)
 
     setTimeout(() => {
         boxMsg2.classList.remove("hide-absolute")
     }, 700);
-    setTimeout(() => {
-        boxMsg2.classList.replace("box2", "box")
-    }, 500);
+   
 }
 
 function handleResetBox() {
