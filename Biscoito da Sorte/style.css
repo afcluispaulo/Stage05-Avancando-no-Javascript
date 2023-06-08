@@ -205,8 +205,6 @@ body {
 
     position: relative;
 
-    
-
 }
 
 .screen2 .msg {
@@ -243,6 +241,7 @@ body {
     align-items: center;
 
     animation: downtopMsg 2.5s;
+    transition-delay: 2s;
 }
 
 
@@ -300,4 +299,3 @@ body {
        
     }
 }
-

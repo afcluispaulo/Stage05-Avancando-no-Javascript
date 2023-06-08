@@ -1,9 +1,9 @@
 const screen1 = document.querySelector(".screen1")
-const topImg = document.querySelector(".top")
-const topCenterImg = document.querySelector(".topCenter")
-const topRigthImg = document.querySelector(".topRight")
+const centerToTopImg = document.querySelector(".top")
+const topToDownImg = document.querySelector(".topCenter")
+const rightPositionToDownImg = document.querySelector(".topRight")
 
-const centerLeftImg = document.querySelector(".centerLeft")
+const rightToCenterImg = document.querySelector(".centerLeft")
 
 const screen2 = document.querySelector(".screen2")
 const boxMsg = document.querySelector(".box")
@@ -47,40 +47,40 @@ btnTry2.addEventListener('click', handleToMainScreen)
 function handleAnimationRepeat() {
 
     setTimeout(() => {
-        topImg.classList.remove("hide")
+        centerToTopImg.classList.remove("hide")
     }, 500);
     
     setTimeout(() => {
-        topImg.classList.add("hide")
+        centerToTopImg.classList.add("hide")
     }, 300);
 
     setTimeout(() => {
-        topCenterImg.classList.remove("hide")
+        topToDownImg.classList.remove("hide")
     }, 300);
 
     setTimeout(() => {
-        topCenterImg.classList.add("hide")
+        topToDownImg.classList.add("hide")
     }, 300);
 
     setTimeout(() => {
-        topRigthImg.classList.remove("hide")
+        rightPositionToDownImg.classList.remove("hide")
     }, 300);
 
     setTimeout(() => {
-        topRigthImg.classList.add("hide")
+        rightPositionToDownImg.classList.add("hide")
     }, 500);
 
 
     setTimeout(() => {
-        centerLeftImg.classList.remove("hide")
+        rightToCenterImg.classList.remove("hide")
     }, 500);      
     
     setTimeout(() => {
-        centerLeftImg.classList.add("hide")
+        rightToCenterImg.classList.add("hide")
     }, 500);  
 
     setTimeout(() => {
-        topImg.classList.add("hide")
+        centerToTopImg.classList.add("hide")
     }, 800);
     
 
