@@ -241,6 +241,7 @@ body {
     align-items: center;
 
     animation: downtopMsg 2.5s;
+    animation-fill-mode: forwards;
     transition-delay: 2s;
 }
 
