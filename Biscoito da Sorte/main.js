@@ -1,6 +1,6 @@
 const screen1 = document.querySelector(".screen1")
 const centerToTopImg = document.querySelector(".top")
-const topToDownImg = document.querySelector(".topCenter")
+const topToRightPositionImg = document.querySelector(".topCenter")
 const rightPositionToDownImg = document.querySelector(".topRight")
 
 const rightToCenterImg = document.querySelector(".centerLeft")
@@ -55,11 +55,11 @@ function handleAnimationRepeat() {
     }, 300);
 
     setTimeout(() => {
-        topToDownImg.classList.remove("hide")
+        topToRightPositionImg.classList.remove("hide")
     }, 300);
 
     setTimeout(() => {
-        topToDownImg.classList.add("hide")
+        topToRightPositionImg.classList.add("hide")
     }, 300);
 
     setTimeout(() => {
@@ -98,11 +98,3 @@ function handleToScreen2() {
     }, 1300);
     
  }
-
-
-
-function handleResetBox() {
-    setTimeout(() => {
-        boxMsg2.classList.replace("box", "box2")
-    }, 500);
-}
