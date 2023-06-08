@@ -288,6 +288,10 @@ body {
     border: none;
 }
 
+.screen2 button:hover {
+    background-color: #b86d04;
+}
+
 @keyframes downtopMsg {
     0% {
         opacity: 0;
