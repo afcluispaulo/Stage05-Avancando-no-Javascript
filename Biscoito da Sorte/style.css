@@ -67,12 +67,12 @@ body {
 
 .top {
    margin-top: -2.0rem;
-   animation: downtop 700ms;
+   animation: downtop 100ms;
 }
 
 .down {
     margin-top: 2.0rem;
-    animation: centerLeft 400ms;
+    animation: centerLeft 100ms;
 }
 
 .downCenter {
@@ -82,7 +82,7 @@ body {
 .downCenterLeft {
     margin-top: 1.5rem;
     margin-right: 9.5rem;
-    animation: downtop 700ms;
+    animation: downtop 100ms;
 }
 
 .toTop {
@@ -92,33 +92,33 @@ body {
 .topleft {
     margin-top: -2.0rem;
     margin-right: 9.5rem;
-    animation: toright 700ms;
+    animation: toright 100ms;
 }
 
 .topCenter {
     margin-top: -2.0rem;
     margin-right: -4.0rem;
-    animation: toright 700ms;
+    animation: toright 100ms;
 }
 
 .topRight {
     margin-top: -2.0rem;
     margin-right: -1.5rem;
-    animation: topdown 700ms;
+    animation: topdown 100ms;
 }
 
 .rightleftCenter {
     margin-left: 1.5rem;
-    animation: toleft 700ms;
+    animation: toleft 100ms;
 }
 
 .centerLeft {
-    animation: toleft 700ms;
+    animation: toleft 100ms;
 }
 
 .leftTop {
     margin-left: -5.5rem;
-    animation: downtop 700ms;
+    animation: downtop 100ms;
 }
 
 
@@ -147,14 +147,14 @@ body {
 
     100% {
         opacity: 1;
-        transform: translateY(-1.5rem);
+        transform: translateY(-.2rem);
     }
 }
 
 @keyframes topdown {
     0% {
         opacity: 1;
-        transform: translateY(-1.5rem);
+        transform: translateY(-.2rem);
     }
 
     100% {
@@ -166,7 +166,7 @@ body {
 @keyframes toright {
     0% {
         opacity: 1;
-        transform: translateX(-2.5rem);
+        transform: translateX(-.2rem);
     }
 
     100% {
@@ -183,7 +183,7 @@ body {
 
     100% {
         opacity: 1;
-        transform: translateX(-1.5rem);
+        transform: translateX(-.2rem);
     }
 }
 
