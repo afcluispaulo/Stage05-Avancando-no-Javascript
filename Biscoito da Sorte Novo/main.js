@@ -1,9 +1,9 @@
 const screen1 = document.querySelector(".screen1")
-const centerToTopImg = document.querySelector(".top")
-const topToRightPositionImg = document.querySelector(".topCenter")
-const rightPositionToDownImg = document.querySelector(".topRight")
+const topImg = document.querySelector(".top")
+const topCenterImg = document.querySelector(".topCenter")
+const topRigthImg = document.querySelector(".topRight")
 
-const rightToCenterImg = document.querySelector(".centerLeft")
+const centerLeftImg = document.querySelector(".centerLeft")
 
 const screen2 = document.querySelector(".screen2")
 const boxMsg = document.querySelector(".box")
@@ -13,8 +13,6 @@ const btnTry = document.querySelector("#btnTry")
 const btnTry2 = document.querySelector("#btnTry2")
 const btn = document.querySelector('button')
 
-console.log("test")
-
 let countClick = 0
 
 function handleTryClick(event) {
@@ -23,22 +21,10 @@ function handleTryClick(event) {
    
     if (countClick == 1) {
         btn.classList.add("hide")
+
         handleAnimationRepeat()
-
-        setTimeout(() => {
-            handleAnimationRepeat()
-        }, 100);
-
-        setTimeout(() => {
-            handleAnimationRepeat()
-        }, 300);
-
-        
-        setTimeout(() => {
-            handleToScreen2()
-        }, 600);
        
-        
+        handleToScreen2()
     }
 }
 
@@ -48,7 +34,6 @@ function handleToMainScreen() {
 
     screen1.classList.remove("hide")
     btn.classList.remove("hide")
-
     handleResetBox()
     
 }
@@ -60,44 +45,41 @@ btnTry2.addEventListener('click', handleToMainScreen)
 function handleAnimationRepeat() {
 
     setTimeout(() => {
-        centerToTopImg.classList.remove("hide")
+        topImg.classList.remove("hide")
     }, 500);
     
     setTimeout(() => {
-        centerToTopImg.classList.add("hide")
+        topImg.classList.add("hide")
     }, 300);
 
     setTimeout(() => {
-        topToRightPositionImg.classList.remove("hide")
+        topCenterImg.classList.remove("hide")
     }, 300);
 
     setTimeout(() => {
-        topToRightPositionImg.classList.add("hide")
+        topCenterImg.classList.add("hide")
     }, 300);
 
     setTimeout(() => {
-        rightPositionToDownImg.classList.remove("hide")
+        topRigthImg.classList.remove("hide")
     }, 300);
 
     setTimeout(() => {
-        rightPositionToDownImg.classList.add("hide")
+        topRigthImg.classList.add("hide")
     }, 500);
 
 
     setTimeout(() => {
-        rightToCenterImg.classList.remove("hide")
+        centerLeftImg.classList.remove("hide")
     }, 500);      
     
     setTimeout(() => {
-        rightToCenterImg.classList.add("hide")
+        centerLeftImg.classList.add("hide")
     }, 500);  
 
     setTimeout(() => {
-        centerToTopImg.classList.add("hide")
+        topImg.classList.add("hide")
     }, 800);
-    
-
-    
 }
 
 function handleToScreen2() {
@@ -107,7 +89,14 @@ function handleToScreen2() {
 
     setTimeout(() => {
         screen2.classList.remove("hide-absolute")
-        
     }, 1300);
-    
+
+    handleAnimationDownTopMsg()
  }
+
+function handleAnimationDownTopMsg() {
+   
+   boxMsg2.classList.add("box2Animation")
+}
+
+
