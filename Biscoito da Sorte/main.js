@@ -27,11 +27,7 @@ function handleTryClick(event) {
 
         setTimeout(() => {
             handleAnimationRepeat()
-        }, 100);
-
-        setTimeout(() => {
-            handleAnimationRepeat()
-        }, 300);
+        }, 450);
 
         
         setTimeout(() => {
@@ -44,13 +40,20 @@ function handleTryClick(event) {
 
 function handleToMainScreen() {
     countClick --
+    setTimeout(() => {
+        handleResetScreen() 
+    }, 300);
+    
+
+    handleResetBox()
+    
+}
+
+function handleResetScreen() {
     screen2.classList.add("hide-absolute")
 
     screen1.classList.remove("hide")
     btn.classList.remove("hide")
-
-    handleResetBox()
-    
 }
 
 btnTry.addEventListener('click', handleTryClick)
