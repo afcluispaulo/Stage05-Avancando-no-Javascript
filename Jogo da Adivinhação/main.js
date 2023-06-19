@@ -43,7 +43,7 @@ function handleTryClick(event) {
  
 function handleResetClick() {
     toggleScreen()
-    xAttempts = 0
+    xAttempts = 1
     randomNumber = Math.round(Math.random() * 10)
     total.innerText = `Total de tentativas: ${xAttempts}`
 }
