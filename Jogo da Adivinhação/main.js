@@ -27,8 +27,9 @@ console.log(randomNumber)
 function handleTryClick(event) {
     event.preventDefault()
 
-    console.log(`Quantidade de tentativas: ${xAttempts}`)
     xAttempts ++
+
+    console.log(`Quantidade de tentativas: ${xAttempts}`)
 
     total.innerText=`Total de tentativas: ${xAttempts}`
 
@@ -45,7 +46,7 @@ function handleTryClick(event) {
     inputNumber.value = ""
     
     
-    if (xAttempts > 11) {
+    if (xAttempts > 10) {
         handleResetClick()
         screen2.querySelector("h2").innerText =`ERRO! Você excedeu a quantidade de tentativas!`
     }
