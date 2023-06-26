@@ -13,11 +13,19 @@ const btnTry = document.querySelector("#btnTry")
 const btnTry2 = document.querySelector("#btnTry2")
 const btn = document.querySelector('button')
 
-console.log("test")
+
+
+const arrayPhrase = ["Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe o teu.", 
+"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolor quos minima aperiam tempore"]
+
 
 let countClick = 0
 
 function handleTryClick(event) {
+
+  
+    choosePhrase()
+  
     event.preventDefault()
     countClick ++
    
@@ -33,7 +41,7 @@ function handleTryClick(event) {
         setTimeout(() => {
             handleToScreen2()
         }, 600);
-       
+
         
     }
 }
@@ -44,9 +52,6 @@ function handleToMainScreen() {
         handleResetScreen() 
     }, 300);
     
-
-    handleResetBox()
-    
 }
 
 function handleResetScreen() {
@@ -54,6 +59,9 @@ function handleResetScreen() {
 
     screen1.classList.remove("hide")
     btn.classList.remove("hide")
+
+    
+
 }
 
 btnTry.addEventListener('click', handleTryClick)
@@ -114,3 +122,16 @@ function handleToScreen2() {
     }, 1300);
     
  }
+
+function choosePhrase() {
+     randomNumber = Math.round(Math.random() * 1)
+
+     console.log(`Novo número sorteado: ${randomNumber}`)  
+ 
+    if (randomNumber == 0) {
+        screen2.querySelector("p").innerText = `${arrayPhrase[0]}`
+    } if (randomNumber == 1) {
+        screen2.querySelector("p").innerText = `${arrayPhrase[1]}`
+    }
+}
+

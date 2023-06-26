@@ -4,7 +4,7 @@ const screen2 = document.querySelector(".screen2")
 const btnTry = document.querySelector("#btnTry")
 const btnReset = document.querySelector("#btnReset")
 
-let randomNumber = Math.round(Math.random() * 10)
+
 let xAttempts = 0
 
 const total = document.querySelector("#total")
