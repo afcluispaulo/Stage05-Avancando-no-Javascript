@@ -126,7 +126,7 @@ function handleToScreen2() {
 function choosePhrase() {
      randomNumber = Math.round(Math.random() * 1)
 
-     console.log(`Novo número sorteado: ${randomNumber}`)  
+     console.log(`Número sorteado: ${randomNumber}`)  
  
     if (randomNumber == 0) {
         screen2.querySelector("p").innerText = `${arrayPhrase[0]}`
