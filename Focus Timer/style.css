@@ -224,6 +224,7 @@ body {
 }
 
 @media (min-width: 520px) {
+
     body {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -247,6 +248,8 @@ body {
         height: 15.2rem;
         border-radius: 2.4rem;
         
-        background-color: var(--bg-primary-color);
+        
     }
+
+    
 }

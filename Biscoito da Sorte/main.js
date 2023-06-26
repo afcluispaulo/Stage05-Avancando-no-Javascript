@@ -60,8 +60,6 @@ function handleResetScreen() {
     screen1.classList.remove("hide")
     btn.classList.remove("hide")
 
-    
-
 }
 
 btnTry.addEventListener('click', handleTryClick)
