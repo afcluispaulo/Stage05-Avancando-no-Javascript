@@ -19,7 +19,7 @@ document.addEventListener('keydown', function(e) {
     }
 })
 
-console.log(randomNumber)
+console.log(`Número sorteado: ${randomNumber}`)
 
 
 
@@ -56,6 +56,7 @@ function handleResetClick() {
     toggleScreen()
     xAttempts = 0
     randomNumber = Math.round(Math.random() * 10)
+    console.log(`Novo número sorteado: ${randomNumber}`)
     total.innerText = "Total de tentativas: 0"
 }
 
