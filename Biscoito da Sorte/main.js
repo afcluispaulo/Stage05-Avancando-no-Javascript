@@ -18,8 +18,8 @@ const btn = document.querySelector('button')
 const arrayPhrase = ["Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe o teu.", 
 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolor quos minima aperiam tempore"]
 
-
 let countClick = 0
+let cClick = 0
 
 function handleTryClick(event) {
 
@@ -48,6 +48,7 @@ function handleTryClick(event) {
 
 function handleToMainScreen() {
     countClick --
+    cClick ++
     setTimeout(() => {
         handleResetScreen() 
     }, 300);
@@ -126,9 +127,9 @@ function choosePhrase() {
 
      console.log(`Número sorteado: ${randomNumber}`)  
  
-    if (randomNumber == 0) {
+    if (randomNumber == 0 && cClick >= 1) {
         screen2.querySelector("p").innerText = `${arrayPhrase[0]}`
-    } if (randomNumber == 1) {
+    } if (randomNumber == 1 && cClick >= 1) {
         screen2.querySelector("p").innerText = `${arrayPhrase[1]}`
     }
 }
