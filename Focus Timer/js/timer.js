@@ -65,7 +65,7 @@ export default function Timer({
         
         if (minutes <= 0 ) {
             reset()
-            
+            countdown()      
         }
     }
 

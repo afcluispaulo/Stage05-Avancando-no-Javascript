@@ -32,6 +32,7 @@ export default function Controls({
         buttonPause.classList.add('hide')
         buttonPlay.classList.remove('hide')
         
+        
     }
 
     function stopTimer() {
