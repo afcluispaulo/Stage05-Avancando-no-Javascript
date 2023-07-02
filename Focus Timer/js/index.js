@@ -39,6 +39,9 @@ import {
 } from "./elements.js"
 
 const controls = Controls({
+    buttonPlay,
+    buttonPause,
+    buttonStop, 
     buttonForest,
     buttonForestStop,
     buttonBox,
@@ -68,3 +71,4 @@ const timer = Timer({
 const sound = sounds()
 
 Events({ theme, timer, controls, sound})
+

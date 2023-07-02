@@ -1,4 +1,6 @@
 export default function Controls({
+    buttonPlay,
+    buttonPause,
     buttonForest,
     buttonForestStop,
     buttonBox,
@@ -17,19 +19,19 @@ export default function Controls({
     buttonFireplace,
     buttonFireplaceStop,
     bbFireplace,
-    fireplaceSlide    
+    fireplaceSlide,  
 
 }) {
     function startTimer() {
         buttonPlay.classList.add('hide')
         buttonPause.classList.remove('hide')
-        timer.countdown()
+        
     }
 
     function pauseTimer() {
         buttonPause.classList.add('hide')
         buttonPlay.classList.remove('hide')
-        timer.hold()
+        
     }
 
     function stopTimer() {
@@ -118,6 +120,10 @@ export default function Controls({
     }
 
     return {
+        startTimer,
+        pauseTimer,
+        stopTimer,
+
         playForest,
         playRain,
         playCoffe,
@@ -127,7 +133,6 @@ export default function Controls({
         stopRain,
         stopCoffe,
         stopFireplace,
-
     }
 
 }

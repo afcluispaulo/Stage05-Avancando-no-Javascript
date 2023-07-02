@@ -32,6 +32,9 @@ const rainSlide = document.getElementById("rainSlide")
 const coffeSlide = document.getElementById("coffeSlide")
 const fireplaceSlide = document.getElementById("fireplaceSlide")
 
+let minutes = Number(minutesDisplay.textContent)
+let seconds = Number(secondsDisplay.textContent)
+
 export {
     theme,
     buttonWhite,
@@ -66,4 +69,7 @@ export {
     fireplaceSlide,
 
     borderStop,
+
+    minutes,
+    seconds,
 }

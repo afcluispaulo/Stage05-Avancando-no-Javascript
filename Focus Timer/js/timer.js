@@ -1,4 +1,6 @@
+
 export default function Timer({ 
+
     minutesDisplay, 
     secondsDisplay, 
     resetControls,

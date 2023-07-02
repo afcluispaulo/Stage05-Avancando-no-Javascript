@@ -41,25 +41,23 @@ export default function({
         buttonDark.classList.remove("hide")
     })
     
-    buttonPlay.addEventListener('click', function(){
-        buttonPlay.classList.add('hide')
-        buttonPause.classList.remove('hide')
+    buttonPlay.addEventListener('click', function(){      
         timer.countdown()
+        controls.startTimer()
         
     })
     
     buttonPause.addEventListener('click', function() {
-        buttonPause.classList.add('hide')
-        buttonPlay.classList.remove('hide')
+        
         timer.hold()
+        controls.pauseTimer()
         
     })
     
     buttonStop.addEventListener('click', function(){
-        buttonPause.classList.add('hide')
-        buttonPlay.classList.remove('hide')
-    
         timer.reset()
+        controls.stopTimer()
+
     
     })
     
@@ -70,6 +68,7 @@ export default function({
     
     buttonDecr.addEventListener('click', function() {
         timer.dec5Minutes()
+        
     })
     
     buttonForest.addEventListener('click', function() {
