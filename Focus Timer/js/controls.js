@@ -20,6 +20,23 @@ export default function Controls({
     fireplaceSlide    
 
 }) {
+    function startTimer() {
+        buttonPlay.classList.add('hide')
+        buttonPause.classList.remove('hide')
+        timer.countdown()
+    }
+
+    function pauseTimer() {
+        buttonPause.classList.add('hide')
+        buttonPlay.classList.remove('hide')
+        timer.hold()
+    }
+
+    function stopTimer() {
+        buttonPause.classList.add('hide')
+        buttonPlay.classList.remove('hide')
+    }
+
     function playForest() {
         buttonForest.classList.add("hide")
         buttonForestStop.classList.remove("hide")

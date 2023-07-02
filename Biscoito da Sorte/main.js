@@ -13,8 +13,6 @@ const btnTry = document.querySelector("#btnTry")
 const btnTry2 = document.querySelector("#btnTry2")
 const btn = document.querySelector('button')
 
-
-
 const arrayPhrase = ["Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe o teu.", 
 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolor quos minima aperiam tempore"]
 
