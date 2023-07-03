@@ -18,3 +18,7 @@ para quando o usário exceder a quantidade, deverá mostrar uma nova janela de e
     <li>Eventos e callbacks</li>
     <li>Refatoração de código</li>
 </ul>
+
+## Vídeo demonstrando o projeto
+https://github.com/afcluispaulo/Stage05-Avancando-no-Javascript/assets/102933945/4c9374c6-28f3-4b35-9176-81cb1f02d6f9
+
