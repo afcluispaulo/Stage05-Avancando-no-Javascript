@@ -77,7 +77,6 @@ function toggleScreen()  {
     screen1.classList.toggle("hide")
     screen2.classList.toggle("hide")
     
-    
 }
 
 function sortNumber() {
