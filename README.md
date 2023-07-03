@@ -1,4 +1,4 @@
-# Projetos do Stage 5
+# Projetos do Stage 5 - Avançando no Javascript
 
 ## Desafio Jogo da Adivinhação
 <img src="Assets/Img/Jogo da Adivinhacao.jpg" alt="Imagem do projeto do jogo da Adivinhação">
