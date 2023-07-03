@@ -4,6 +4,7 @@ const screen2 = document.querySelector(".screen2")
 const btnTry = document.querySelector("#btnTry")
 const btnReset = document.querySelector("#btnReset")
 
+randomNumber = Math.round(Math.random() * 10)
 
 let xAttempts = 0
 
@@ -19,9 +20,9 @@ document.addEventListener('keydown', function(e) {
     }
 })
 
-console.log(`Número sorteado: ${randomNumber}`)
-
-
+if (xAttempts == 0) {
+    console.log(`Primeiro número sorteado: ${randomNumber}`)
+}
 
 // funções callback
 function handleTryClick(event) {
