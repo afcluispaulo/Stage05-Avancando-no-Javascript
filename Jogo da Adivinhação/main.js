@@ -4,11 +4,10 @@ const screen2 = document.querySelector(".screen2")
 const btnTry = document.querySelector("#btnTry")
 const btnReset = document.querySelector("#btnReset")
 
-randomNumber = Math.round(Math.random() * 10)
-
 let xAttempts = 0
 
 const total = document.querySelector("#total")
+
 
 // Eventos
 btnTry.addEventListener('click', handleTryClick)
@@ -19,6 +18,8 @@ document.addEventListener('keydown', function(e) {
         handleResetClick()
     }
 })
+
+sortNumber()
 
 if (xAttempts == 0) {
     console.log(`Primeiro número sorteado: ${randomNumber}`)
@@ -39,29 +40,47 @@ function handleTryClick(event) {
 
     if(Number(inputNumber.value) == randomNumber) { 
         toggleScreen()
+
         screen2.querySelector("h2").innerText =`Acertou em ${xAttempts} tentativas`
-        
+
+        sortNumber()
+
+        console.log(`Novo número sorteado: ${randomNumber} `)
     }
 
     
     inputNumber.value = ""
     
-    
     if (xAttempts > 10) {
         handleResetClick()
+
+        sortNumber()
+
         screen2.querySelector("h2").innerText =`ERRO! Você excedeu a quantidade de tentativas!`
+        
+        console.log(`Novo número sorteado: ${randomNumber} `)
     }
+
+
 }
  
 function handleResetClick() {
     toggleScreen()
+
     xAttempts = 0
-    randomNumber = Math.round(Math.random() * 10)
-    console.log(`Novo número sorteado: ${randomNumber}`)
+    
     total.innerText = "Total de tentativas: 0"
+    
 }
 
 function toggleScreen()  {
     screen1.classList.toggle("hide")
     screen2.classList.toggle("hide")
+    
+    
 }
+
+function sortNumber() {
+    randomNumber = Math.round(Math.random() * 10)
+}
+
