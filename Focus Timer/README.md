@@ -21,6 +21,7 @@
     <li>Uso de sons no aplicativo</li>
     <li>Uso de controladores de volumes e suas customizações</li>
     <li>Dark Mode</li>
+    <li>Media Queries/li>
 </ul>
 
 ## Vídeo Demonstrando a Versão Mobile
