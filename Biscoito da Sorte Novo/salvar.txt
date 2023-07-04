@@ -1,4 +1,0 @@
-<img src="img/fortune-cookie.jpg" alt="" class="toTop hide">
-<img src="img/fortune-cookie.jpg" alt="" class="down hide">
-        <img src="img/fortune-cookie.jpg" alt="" class="downCenter ">
-        <img src="img/fortune-cookie.jpg" alt="" class="downCenterLeft hide">
