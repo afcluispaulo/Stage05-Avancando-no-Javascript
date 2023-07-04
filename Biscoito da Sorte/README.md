@@ -19,5 +19,7 @@
     <li>Funções callback</li>
     <li>Arrays</li>
 </ul>
+ 
+# Vídeo Demonstrando o Projeto
+https://github.com/afcluispaulo/Stage05-Avancando-no-Javascript/assets/102933945/0e085ec4-c3cc-45e3-937f-afc5fdad21a6
 
-https://github.com/afcluispaulo/Stage05-Avancando-no-Javascript/assets/102933945/5da234fd-d542-4c08-83c1-ba39bdc6509c
