@@ -22,5 +22,7 @@
 </ul>
 
 ## Vídeo demonstrando o projeto
-https://github.com/afcluispaulo/Stage05-Avancando-no-Javascript/assets/102933945/05ea9f53-9222-4560-b040-8054cd4fb8a4
+https://github.com/afcluispaulo/Stage05-Avancando-no-Javascript/assets/102933945/6a87ebf0-5bbc-4d25-901b-a869ec66e2bb
+
+
 
